@@ -9,7 +9,7 @@ import lombok.Data;
 public class Pizza {
     @Id
     private int id;
-    private String size;
+    private PizzaSize size;
     private String toppings;
     private String sauce;
 }

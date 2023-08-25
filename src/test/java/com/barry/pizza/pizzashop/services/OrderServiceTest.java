@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 import com.barry.pizza.pizzashop.models.Pizza;
+import com.barry.pizza.pizzashop.models.PizzaSize;
 
 public class OrderServiceTest {
 
@@ -15,7 +16,7 @@ public class OrderServiceTest {
     public void whenCalculatingCostForLargePizzaReturns20(){
 
         Pizza pizza = new Pizza();
-        pizza.setSize("LARGE");
+        pizza.setSize(PizzaSize.LARGE);
 
         double cost = orderService.calculateCostForPizza(pizza);
 
